@@ -1,0 +1,6 @@
+<%= link_to "Back", wishes_path %>
+
+<h1><%= @wish.name %></h1>
+
+<%= link_to "Edit", edit_wish_path(@wish) %>
+<%= button_to "Delete", @wish, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
