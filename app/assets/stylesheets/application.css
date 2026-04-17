@@ -8,3 +8,40 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+:root {
+  --main-bg: #FFF9F9;
+  --accent-soft: #FCE4EC;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  background-color: var(--main-bg);
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+nav a {
+  display: inline-block;
+}
+
+main {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.alert,
+.error {
+  color: red;
+}
+
+.notice {
+  color: green;
+}
